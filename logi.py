@@ -29,18 +29,18 @@ def adjust_column_widths(sheet):
             sheet.column_dimensions[column_letter].width = adjusted_width
 
 def merge_and_remove_duplicates(file_paths, reference_file, sheet_name="Sheet1"):
-    # 读取参考文件的C列数据
+    # 读取参考文件的第二列数据
     try:
         reference_df = pd.read_excel(reference_file, sheet_name=sheet_name, engine="openpyxl", dtype=str)
-        reference_values = reference_df.iloc[:, 2].dropna().astype(str).str.strip().unique()  # 获取C列值并去重
-        print("参考文件的C列值示例:")
+        reference_values = reference_df.iloc[:, 1].dropna().astype(str).str.strip().unique()  # 获取第二列值并去重
+        print("参考文件的第二列值示例:")
         print(reference_values[:10])  # 输出前10个参考值供检查
     except Exception as e:
         print(f"读取参考文件失败: {e}")
         return
 
     combined_df = pd.DataFrame()
-
+    
     for file in file_paths:
         try:
             df = pd.read_excel(file, engine="openpyxl", dtype=str)
