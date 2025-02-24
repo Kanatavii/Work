@@ -1,0 +1,5 @@
+ERROR:root:An error occurred:
+Traceback (most recent call last):
+  File "c:\Users\Kanat\OneDrive\Documents\GitHub\UOF\hineno v2.py", line 399, in <module>
+  File "<COMObject <unknown>>", line 5, in Open
+pywintypes.com_error: (-2147352567, '发生意外。', (0, 'Microsoft Excel', "Sorry, we couldn't find C:\\Users\\Kanat\\OneDrive\\Documents\\GitHub\\UOF\\JBC202502211712.xlsx. Is it possible it was moved, renamed or deleted?", 'xlmain11.chm', 0, -2146827284), None)

@@ -20,7 +20,7 @@ filtered_df = df[df.iloc[:, 2].notna()]
 final_df = filtered_df[filtered_df.iloc[:, 3].isna()]
 
 # 只保留指定的列
-columns_to_keep = ["许可时间", "回数", "送り状番号", "箱数", "转运公司", "转运备注", "现场用-函数对应", "入库时间", "取件地"]
+columns_to_keep = ["许可时间", "回数", "送り状番号", "箱数", "转运公司", "转运备注", "现场用-函数对应", "入库时间", "取件地", "数据用"]
 final_df = final_df[columns_to_keep]
 
 # 保存筛选后的数据为新的 Excel 文件
@@ -35,7 +35,7 @@ ws = wb.Worksheets(1)
 # 设置列宽并为第一列指定短日期格式
 column_widths = {
     'A': 11, 'B': 4.63, 'C': 13.25, 'D': 4.63,
-    'E': 18, 'F': 28, 'G': 58.13, 'H': 19.88, 'I': 15
+    'E': 18, 'F': 28, 'G': 58.13, 'H': 19.88, 'I': 15, 'J': 15
 }
 
 for col, width in column_widths.items():
@@ -49,11 +49,11 @@ thin_border = 2  # 边框粗细
 used_range = ws.UsedRange
 for row in range(1, used_range.Rows.Count + 1):  # 从第1行开始
     if ws.Cells(row, 1).Value is not None:
-        for col in range(1, 10):  # 从A到I列
+        for col in range(1, 11):  # 从A到J列
             ws.Cells(row, col).Borders.Weight = thin_border
 
 # 设置打印区域
-ws.PageSetup.PrintArea = f"A1:I{used_range.Rows.Count}"
+ws.PageSetup.PrintArea = f"A1:J{used_range.Rows.Count}"
 
 # 设置页面布局
 ws.PageSetup.Orientation = 2  # 横向

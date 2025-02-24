@@ -102,7 +102,7 @@ def merge_and_remove_duplicates(file_paths, reference_file, sheet_name="Sheet1")
         # 在C列添加公式，从C2开始
         for row in range(2, sheet.max_row + 1):
             cell = sheet[f"C{row}"]
-            cell.value = f'=IF(OR(LEFT(B{row},1)="2",LEFT(B{row},1)="3"),"不要",IF(LEFT(B{row},1)="4","黑猫","投函"))'
+            cell.value = f'=IF(AND(LEN(B{row})=12, OR(LEFT(B{row},3)="528", LEFT(B{row},3)="729", LEFT(B{row},3)="929", LEFT(B{row},3)="623"), ISNUMBER(VALUE(RIGHT(B{row},9)))), "投函", "不要")'
 
         # 调整列宽
         adjust_column_widths(sheet)

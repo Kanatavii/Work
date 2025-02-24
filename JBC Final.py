@@ -119,7 +119,7 @@ def download_csv(driver, username, password):
     filename = os.path.basename(current_url)
 
     # Specify the download path and filename
-    download_path = "C:\\Users\Kanat\Downloads/" + filename
+    download_path = r"C:\Users\Kanat\Downloads/" + filename
 
     # Wait for the download to complete (adjust sleep time as needed)
     time.sleep(1)
@@ -155,8 +155,8 @@ csv_file2 = download_csv(driver, "UOFB", "EWQ&6qwe42B")
 driver.quit()
 
 # Merge the CSV files into a single DataFrame
-df1 = pd.read_csv(csv_file1)
-df2 = pd.read_csv(csv_file2)
+df1 = pd.read_csv(csv_file1, encoding='cp932')
+df2 = pd.read_csv(csv_file2, encoding='cp932')
 merged_df = pd.concat([df1, df2], ignore_index=True)
 
 # Create a new filename with the current date
@@ -197,7 +197,7 @@ workbook = openpyxl.Workbook()
 sheet = workbook.active
 
 # 设置列名称
-column_names = ["许可时间", "回数", "送り状番号", "箱数", "转运公司", "转运备注", "现场用-函数对应","入库时间","取件地"]
+column_names = ["当前时间", "回数", "送り状番号", "箱数", "转运公司", "转运备注", "现场用-函数对应","入库时间","取件地","数据用"]
 for i, column_name in enumerate(column_names, start=1):
     sheet.cell(row=1, column=i, value=column_name)
 
@@ -210,6 +210,7 @@ sheet.column_dimensions['F'].width = 28
 sheet.column_dimensions['G'].width = 58.13
 sheet.column_dimensions['H'].width = 19.88
 sheet.column_dimensions['I'].width = 15
+sheet.column_dimensions['J'].width = 15
     
 # 设置日期格式
 date_format = "%Y/%m/%d"
@@ -231,6 +232,7 @@ for single_number in single_numbers:
     sheet.cell(row=row, column=7, value="")
     sheet.cell(row=row, column=8, value="")
     sheet.cell(row=row, column=9, value="")
+    sheet.cell(row=row, column=10, value="")
     row += 1
 
 # 保存 Excel 文件
@@ -244,7 +246,7 @@ excel_sheet = excel_workbook.active
 # 使用VLOOKUP检索对应单号的数据
 for row_num, row in enumerate(excel_sheet.iter_rows(min_row=2, max_row=excel_sheet.max_row, min_col=3, max_col=3), start=2):
     single_number = row[0].value
-    order_data = uof_data.loc[uof_data["送り状番号"].str.contains(single_number, na=False), ["箱数", "转运公司", "转运备注", "现场用-函数对应","入库时间","取件地"]]
+    order_data = uof_data.loc[uof_data["送り状番号"].str.contains(single_number, na=False), ["箱数", "转运公司", "转运备注", "现场用-函数对应","入库时间","取件地","数据用"]]
     if not order_data.empty:
         vlookup_data = order_data.values.tolist()[0]
         for i, value in enumerate(vlookup_data, start=4):
@@ -267,13 +269,12 @@ df = pd.read_excel(filename)
 # 选择第一个sheet
 Worksheet = Workbook.Worksheets(1)
 
-
 # Set row height to 30
 for row in range(1, Worksheet.UsedRange.Rows.Count + 1):
     Worksheet.Rows(row).RowHeight = 30
 
 # Center and middle align columns A to H except for G
-for col in range(1, 10):  # Columns A to H
+for col in range(1, 11):  # Columns A to H
     if col != 7:  # Skip column G (which is the 7th column)
         Worksheet.Columns(col).HorizontalAlignment = -4108  # xlCenter
         Worksheet.Columns(col).VerticalAlignment = -4108  # xlCenter
@@ -296,11 +297,11 @@ for i in range(Worksheet.UsedRange.Rows.Count, 1, -1):
 thin_border = 2
 for row in range(1, Worksheet.UsedRange.Rows.Count + 1):  # 从第1行开始
     if Worksheet.Cells(row, 1).Value is not None:
-        for col in range(1, 10):  # 从A到H
+        for col in range(1, 11):  # 从A到H
             Worksheet.Cells(row, col).Borders.Weight = thin_border
             
 # 设置打印区域
-Worksheet.PageSetup.PrintArea = 'A1:I{}'.format(Worksheet.UsedRange.Rows.Count)
+Worksheet.PageSetup.PrintArea = 'A1:J{}'.format(Worksheet.UsedRange.Rows.Count)
 
 # 设置为横向
 Worksheet.PageSetup.Orientation = 2
@@ -338,3 +339,4 @@ df.drop_duplicates(subset=df.columns[2], keep='first', inplace=True)
 df.to_excel(excel_filename, index=False)
 
 print("done")
+

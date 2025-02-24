@@ -1,0 +1,10 @@
+2025-01-27 11:29:01,309 - WARNING - The chromedriver version (131.0.6778.69) detected in PATH at C:\Private\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.83); currently, chromedriver 132.0.6834.110 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry
+2025-01-27 11:29:06,242 - INFO - Successful login for JUTB
+2025-01-27 11:29:14,420 - WARNING - The chromedriver version (131.0.6778.69) detected in PATH at C:\Private\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.83); currently, chromedriver 132.0.6834.110 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry
+2025-01-27 11:29:23,367 - INFO - Successful login for UOFB
+2025-01-27 11:29:36,117 - CRITICAL - Critical failure: (-2147352567, '发生意外。', (0, 'Microsoft Excel', "Sorry, we couldn't find C:\\xl\\workbook.xml. Is it possible it was moved, renamed or deleted?", 'xlmain11.chm', 0, -2146827284), None)
+2025-01-27 12:34:51,618 - WARNING - The chromedriver version (131.0.6778.69) detected in PATH at C:\Private\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.83); currently, chromedriver 132.0.6834.110 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry
+2025-01-27 12:34:56,759 - INFO - Successful login for JUTB
+2025-01-27 12:35:04,790 - WARNING - The chromedriver version (131.0.6778.69) detected in PATH at C:\Private\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (132.0.6834.83); currently, chromedriver 132.0.6834.110 is recommended for chrome 132.*, so it is advised to delete the driver in PATH and retry
+2025-01-27 12:35:14,075 - INFO - Successful login for UOFB
+2025-01-27 12:35:36,764 - INFO - Process completed successfully
