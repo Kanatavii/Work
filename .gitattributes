@@ -1,3 +1,5 @@
+*.exe filter=lfs diff=lfs merge=lfs -text
+*.pkg filter=lfs diff=lfs merge=lfs -text
 dist/logi_post_conv.exe filter=lfs diff=lfs merge=lfs -text
 build/logi_post_conv/logi_post_conv.pkg filter=lfs diff=lfs merge=lfs -text
 build/convert2/convert2.pkg filter=lfs diff=lfs merge=lfs -text
