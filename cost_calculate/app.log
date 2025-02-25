@@ -1,0 +1,24 @@
+2024-12-03 18:53:30,665 - ERROR - An error occurred
+Traceback (most recent call last):
+  File "c:\Users\Kanat\OneDrive\Documents\GitHub\cost_calculate\JHSSv2.py", line 43, in <module>
+    inbox = account.Folders["Inbox"]
+            ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kanat\AppData\Local\Programs\Python\Python312\Lib\site-packages\win32com\client\dynamic.py", line 316, in __getitem__
+    self._oleobj_.Invoke(dispid, LCID, invkind, 1, index)
+pywintypes.com_error: (-2147352567, '发生意外。', (4096, 'Microsoft Outlook', '尝试的操作失败。找不到某个对象。', None, 0, -2147221233), None)
+2024-12-03 18:53:42,788 - ERROR - An error occurred
+Traceback (most recent call last):
+  File "c:\Users\Kanat\OneDrive\Documents\GitHub\cost_calculate\JHSSv2.py", line 43, in <module>
+    inbox = account.Folders["Inbox"]
+            ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kanat\AppData\Local\Programs\Python\Python312\Lib\site-packages\win32com\client\dynamic.py", line 316, in __getitem__
+    self._oleobj_.Invoke(dispid, LCID, invkind, 1, index)
+pywintypes.com_error: (-2147352567, '发生意外。', (4096, 'Microsoft Outlook', '尝试的操作失败。找不到某个对象。', None, 0, -2147221233), None)
+2024-12-03 19:05:24,043 - ERROR - An error occurred
+Traceback (most recent call last):
+  File "c:\Users\Kanat\OneDrive\Documents\GitHub\cost_calculate\JHSSv2.py", line 40, in <module>
+    inbox = namespace.Folders(default_account.DisplayName).Folders["Inbox"]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kanat\AppData\Local\Programs\Python\Python312\Lib\site-packages\win32com\client\dynamic.py", line 316, in __getitem__
+    self._oleobj_.Invoke(dispid, LCID, invkind, 1, index)
+pywintypes.com_error: (-2147352567, '发生意外。', (4096, 'Microsoft Outlook', '尝试的操作失败。找不到某个对象。', None, 0, -2147221233), None)

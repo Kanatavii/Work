@@ -1,0 +1,276 @@
+{
+    "2kg迄": {
+        "80": {
+            "weight": "5kg迄",
+            "price": "5kg迄"
+        },
+        "100": {
+            "weight": "10kg迄",
+            "price": "10kg迄"
+        },
+        "140": {
+            "weight": "20kg迄",
+            "price": "20kg迄"
+        },
+        "160": {
+            "weight": "30kg迄",
+            "price": "30kg迄"
+        },
+        "170": {
+            "weight": "50kg迄",
+            "price": "50kg迄"
+        }
+    },
+    "440": {
+        "80": {
+            "weight": "5kg迄",
+            "price": 470
+        },
+        "100": {
+            "weight": "10kg迄",
+            "price": 550
+        },
+        "140": {
+            "weight": "20kg迄",
+            "price": 770
+        },
+        "160": {
+            "weight": "30kg迄",
+            "price": 1100
+        },
+        "170": {
+            "weight": "50kg迄",
+            "price": 1660
+        },
+        "180": {
+            "weight": NaN,
+            "price": 1950
+        },
+        "200": {
+            "weight": NaN,
+            "price": 2560
+        },
+        "220": {
+            "weight": NaN,
+            "price": 3160
+        },
+        "240": {
+            "weight": NaN,
+            "price": 4320
+        },
+        "260": {
+            "weight": NaN,
+            "price": 5190
+        }
+    },
+    "430": {
+        "80": {
+            "weight": "5kg迄",
+            "price": 470
+        },
+        "100": {
+            "weight": "10kg迄",
+            "price": 550
+        },
+        "140": {
+            "weight": "20kg迄",
+            "price": 800
+        },
+        "160": {
+            "weight": "30kg迄",
+            "price": 1150
+        },
+        "170": {
+            "weight": "50kg迄",
+            "price": 1750
+        },
+        "180": {
+            "weight": NaN,
+            "price": 2010
+        },
+        "200": {
+            "weight": NaN,
+            "price": 2820
+        },
+        "220": {
+            "weight": NaN,
+            "price": 3230
+        },
+        "240": {
+            "weight": NaN,
+            "price": 4350
+        },
+        "260": {
+            "weight": NaN,
+            "price": 5390
+        }
+    },
+    "420": {
+        "80": {
+            "weight": "5kg迄",
+            "price": 440
+        },
+        "100": {
+            "weight": "10kg迄",
+            "price": 500
+        },
+        "140": {
+            "weight": "20kg迄",
+            "price": 610
+        },
+        "160": {
+            "weight": "30kg迄",
+            "price": 880
+        },
+        "170": {
+            "weight": "50kg迄",
+            "price": 1550
+        },
+        "180": {
+            "weight": NaN,
+            "price": 1920
+        },
+        "200": {
+            "weight": NaN,
+            "price": 2590
+        },
+        "220": {
+            "weight": NaN,
+            "price": 2980
+        },
+        "240": {
+            "weight": NaN,
+            "price": 3980
+        },
+        "260": {
+            "weight": NaN,
+            "price": 4950
+        }
+    },
+    "460": {
+        "80": {
+            "weight": "5kg迄",
+            "price": 550
+        },
+        "100": {
+            "weight": "10kg迄",
+            "price": 640
+        },
+        "140": {
+            "weight": "20kg迄",
+            "price": 960
+        },
+        "160": {
+            "weight": "30kg迄",
+            "price": 1440
+        },
+        "170": {
+            "weight": "50kg迄",
+            "price": 2270
+        },
+        "180": {
+            "weight": NaN,
+            "price": 2650
+        },
+        "200": {
+            "weight": NaN,
+            "price": 3590
+        },
+        "220": {
+            "weight": NaN,
+            "price": 4490
+        },
+        "240": {
+            "weight": NaN,
+            "price": 6280
+        },
+        "260": {
+            "weight": NaN,
+            "price": 7910
+        }
+    },
+    "480": {
+        "80": {
+            "weight": "5kg迄",
+            "price": 560
+        },
+        "100": {
+            "weight": "10kg迄",
+            "price": 730
+        },
+        "140": {
+            "weight": "20kg迄",
+            "price": 1150
+        },
+        "160": {
+            "weight": "30kg迄",
+            "price": 1810
+        },
+        "170": {
+            "weight": "50kg迄",
+            "price": 2930
+        },
+        "180": {
+            "weight": NaN,
+            "price": 3300
+        },
+        "200": {
+            "weight": NaN,
+            "price": 4570
+        },
+        "220": {
+            "weight": NaN,
+            "price": 5480
+        },
+        "240": {
+            "weight": NaN,
+            "price": 7460
+        },
+        "260": {
+            "weight": NaN,
+            "price": 9600
+        }
+    },
+    "1400": {
+        "80": {
+            "weight": "5kg迄",
+            "price": 1400
+        },
+        "100": {
+            "weight": "10kg迄",
+            "price": 1800
+        },
+        "140": {
+            "weight": "20kg迄",
+            "price": 2700
+        },
+        "160": {
+            "weight": "30kg迄",
+            "price": 7660
+        },
+        "170": {
+            "weight": "50kg迄",
+            "price": 12060
+        },
+        "180": {
+            "weight": NaN,
+            "price": 14260
+        },
+        "200": {
+            "weight": NaN,
+            "price": 18660
+        },
+        "220": {
+            "weight": NaN,
+            "price": 23060
+        },
+        "240": {
+            "weight": NaN,
+            "price": 31860
+        },
+        "260": {
+            "weight": NaN,
+            "price": 40660
+        }
+    }
+}
